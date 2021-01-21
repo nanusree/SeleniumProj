@@ -1,0 +1,54 @@
+package classwork;
+
+public class Print2DArray {
+
+	public static void main(String[] args) {
+	
+		int [] [] my2Darray = new int [4][5];
+		
+		
+		my2Darray [0][0]= 11;
+		my2Darray [0][1]= 12;
+		my2Darray [0][2]= 13;
+		my2Darray [0][3]= 14;
+		my2Darray [0][4]= 15;
+		
+		my2Darray [1][0]= 21;
+		my2Darray [1][1]= 22;
+		my2Darray [1][2]= 23;
+		my2Darray [1][3]= 24;
+		my2Darray [1][4]= 25;
+		
+		my2Darray [2][0]= 31;
+		my2Darray [2][1]= 32;
+		my2Darray [2][2]= 33;
+		my2Darray [2][3]= 34;
+		my2Darray [2][4]= 35;
+		
+		my2Darray [3][0]= 41;
+		my2Darray [3][1]= 42;
+		my2Darray [3][2]= 43;
+		my2Darray [3][3]= 44;
+		my2Darray [3][4]= 45;
+		
+	
+		int sum = 0;	
+		System.out.println("My 2D Array");
+		
+		for(int row=0; row <4; row++) {
+			
+			for (int col=0; col < 5; col++) {
+				
+			
+				System.out.print(my2Darray[row][col] + "\t");
+				sum = sum + my2Darray[row][col];
+			
+			}
+			System.out.println();
+			
+		}
+		System.out.println();
+		System.out.println("Sum of all array elements : " + sum);
+	}
+
+}
